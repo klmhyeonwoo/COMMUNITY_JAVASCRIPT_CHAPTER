@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> CHAPTER 07 </title>
+    </head>
+
+    <body>
+
+      <style>
+        .section {
+          position : absolute;
+          left : 50%;
+          top : 50%;
+          transform : translate(-50%, -50%);
+        }
+
+        .start_btn, .stop_btn, .reset_btn {
+          border-radius : 50px;
+          border-style : solid;
+          width : 130px;
+          height : 30px;
+          margin-bottom : 5px;
+          border-color : #6666ff;
+          background-color : white;
+          font-size : 9px;
+        }
+
+        .start_btn:active, .stop_btn:active, .reset_btn:active {
+          border-color : #6666ff;
+        }
+
+        .start_btn:focus, .stop_btn:focus {
+          color : #6666ff;
+        }
+
+        .timer {
+          text-align : center;
+          font-size : 30px;
+          font-weight : 700;
+        }
+
+        .subscription {
+          font-size : 6px;
+          text-align : center;
+          margin-top : -30px;
+          margin-bottom : -8px;
+          color : #6666ff;
+        }
+
+        </style>
+
+      <div class="section">
+      <p class="timer">00:00:00</p>
+      <p class="subscription">모각코 커뮤니티 타이머<p>
+      <button type="button" name="button" class="start_btn" onclick="StartTimer();">START</button><br />
+      <button type="button" name="button" class="stop_btn" onclick="StopTimer()">STOP</button><br />
+      <button type="button" name="button" class="reset_btn" onclick="ClearTimer()">RESET</button>
+      </div>
+      <script src="./Chap07.js" charset="utf-8"></script>
+      </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> CHAPTER 06 </title>
+
+  </head>
+
+  <body>
+
+    <style>
+    .section {
+      position : absolute;
+      left : 50%;
+      top : 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .checkbox_confirm {
+      margin-top: -10px;
+      font-size: 10px;
+      color: #6666ff;
+    }
+
+    .result {
+      font-size: 10px;
+      color: #6666ff;
+      margin-top: 2px;
+      text-align: center;
+    }
+
+    .user_input_layer {
+      position: absolute;
+      top : 50%;
+      left : 50%;
+      transform: translate(50%, 50%);
+    }
+
+    .value_a, .value_b {
+      width: 200px;
+      height: 30px;
+      border-radius: 50px;
+      border-style: groove;
+      text-align: center;
+      font-size: 11px;
+      margin-bottom: 7px;
+    }
+
+    .btn {
+      width: 100px;
+      height: 30px;
+      border-radius: 50px;
+      border-style: groove;
+      text-align: center;
+      font-size: 11px;
+      margin-bottom: 7px;
+      background-color: white;
+    }
+
+    .checkbox_layer, .button_section {
+      text-align: center;
+    }
+
+    </style>
+
+    <div class = "section">
+
+    <!-- checkbox layer -->
+
+    <div class = "checkbox_layer">
+
+    <p class = "input_text">
+    <input type="checkbox" name="calc" onclick="checkOnlyOne(this)" value="+">
+    +
+    </input>
+    <input type="checkbox" name="calc" onclick="checkOnlyOne(this)" value="-">
+    -
+    </input>
+    <input type="checkbox" name="calc" onclick="checkOnlyOne(this)" value="*">
+    *
+    </input>
+    <input type="checkbox" name="calc" onclick="checkOnlyOne(this)" value="/">
+    /
+    </input>
+    <input type="checkbox" name="calc" onclick="checkOnlyOne(this)" value="%">
+    %
+    </input>
+    </p>
+    <p class = "checkbox_confirm"> 아직 아무것도 선택되지 않았습니다 </p>
+
+    </div>
+
+    <!-- user input layer -->
+    <input type="text" class="value_a" value="" placeholder="첫번째 숫자를 입력해주세요!">
+    <br>
+    <input type="text" class="value_b" value="" placeholder="두번째 숫자를 입력해주세요!">
+    <br>
+
+    <div class = "button_section">
+    <button type="submit" name="button" class="btn" onclick="run()">결과 확인</button>
+    <button type="submit" name="button" class="btn" onclick="reset()">초기화</button>
+    </div>
+
+    <p class = "result"></p>
+    </div>
+
+
+    <script src="./Chap06.js" charset="utf-8"></script>
+    </body>
+</html>

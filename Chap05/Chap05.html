@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title> CHAPTER 05 </title>
+
+    <style>
+      .input {
+        position : absolute;
+        left : 50%;
+        top : 50%;
+        transform : translate(-50%, -50%);
+      }
+      .input_box {
+        height : 30px;
+        width: 190px;
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .btn {
+        height: 40px;
+        width: 250px;
+        border-style : none;
+        border-radius: 100px;
+      }
+
+      .btn:hover {
+        border-style : solid;
+      }
+
+      .result {
+        text-align: center;
+      }
+
+
+      p {
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      </style>
+    </head>
+
+    <body>
+      <div class="input">
+      <p>변수 = <input type="text" class="input_box" value="" placeholder="선언된 변수의 값을 입력해주세요!"></input> </p>
+      <button type="submit" name="button" class="btn" onclick="result()">변수타입확인</button>
+      <p class = "result">결과값이 하단에 출력됩니다</p>
+      </div>
+      <script src="./Chap05.js" charset="utf-8"></script>
+      </body>
+
+      </html>
