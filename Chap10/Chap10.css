@@ -1,0 +1,131 @@
+.section {
+  position : absolute;
+  top : 50%;
+  left : 50%;
+  transform : translate(-50%, -50%);
+  width : 300px;
+  height : 650px;
+  border-style : groove;
+  text-align : center;
+}
+
+#btn, #btn_center {
+  width : 60px;
+  height : 60px;
+  border-radius : 100px;
+  font-size : 15px;
+  border-style : none;
+  background-color : #E5E5EA;
+  opacity : 100%;
+}
+
+#btn:active, #btn_center:active {
+  background-color : #AEAEB2;
+  opacity: 1;
+  transition:all 0.1s;
+  animation: fadein 0.6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+
+#btn_center {
+  margin-left : 25px;
+  margin-right : 25px;
+}
+
+.num_section {
+  text-align : center;
+  width : auto;
+  margin-top : 38px;
+}
+
+.status {
+  display : inline-block;
+  width : 100%;
+}
+
+.menu, .indicator {
+  display : absolute;
+  width : 100%;
+}
+
+.menu {
+  margin-top : 40px;
+}
+
+.indicator {
+  margin-top: -10px;
+}
+
+.num, .sub {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  margin-top: 4px;
+}
+
+.num {
+  font-size : 28px;
+}
+
+.sub {
+  margin-top : -30px;
+  font-size : 3px;
+  -webkit-transform: scale(0.75);
+  -webkit-text-size-adjust: none;
+  font-weight : 700;
+}
+
+.btn_section {
+  display : flex;
+  width : auto;
+  height : 100px;
+  justify-content : center;
+  align-items : center;
+  margin-bottom : -25px;
+}
+
+.call_section {
+  display : flex;
+  width : auto;
+  height : 100px;
+  justify-content : center;
+  align-items : center;
+  margin-bottom : -25px;
+}
+
+
+.call {
+  width : auto;
+  height : 75px;
+}
+
+.call:active {
+  content : url('./call_2.jpg');
+}
+
+.number_message {
+  font-size : 27px;
+  visibility : hidden;
+}
+
+.number_add {
+  margin-top : -20px;
+  color : #007AFF;
+  visibility : hidden;
+}
+
+.message_section {
+  width : auto;
+  height : 107px;
+  border : 5px solid transparent; /* BORDER 선 투명하게 */
+  margin-bottom : -35px;
+}
